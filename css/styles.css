@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  
+}
+
+body{
+  background-color: grey;
+}
+
+:root {
+
+  /* Gradientes */
+  --gradient-primary:linear-gradient(135deg, #667eea 0%, #764ba2 100%);                                 
+  --gradient-light:linear-gradient(135deg, rgba(102, 126, 234, 0.2) 0%, rgba(118, 75, 162, 0.2) 100%);
+  --overlay-gradient:linear-gradient(135deg, rgba(102, 126, 234, 0.9) 0%, rgba(118, 75, 162, 0.9) 100%);
+
+  /* Colores solidos */
+  --primary-color:#667eea;                                                                           
+  --secondary-color:#764ba2;                                                                           
+  --dark-color:#1a1a2e;                                                                            
+  --light-color:#f8f9fa;     
+
+  /* Texto */
+  --text-primary:  #2d3748;                                                                            
+  --text-secondary:#718096;                                                                            
+  --text-light:    #ffffff;      
+
+  /* Fondos */
+  --bg-white: #ffffff;                                                                            
+  --bg-light: #f7fafc;                                                                            
+  --bg-dar: #1a1a2e;                                                                            
+  --bg-footer: #0f0f1e;    
+  
+  /* Orvelay */
+  --overlay-dark:rgba(26, 26, 46, 0.85);
+
+  /* Sombras */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);                                                       
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);                                                       
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);                                                    
+  --shadow-hover: 0 15px 30px rgba(102, 126, 234, 0.3);          
+
+  /* Transicion */
+  --transition-base: all 0.3s ease;  
+}
+
+.logo {
+  width: 80px;
+  height:80px;
+  margin-bottom: 15px;
+}
+
+.btn_contact {
+  background: var(--gradient-primary);
+  color: var(--light-color);
+}
+
+.links_nav li a{
+  position: relative;
+  color: var(--dark-color);
+  
+}
+
+
+.links_nav li a::after {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: "";
+  position: absolute; 
+  bottom: -14px; 
+  
+  transform: translateX(20%); 
+  width: 0; 
+  
+  height: 2px;
+  background: var(--gradient-primary);
+  transition: width 0.3s ease;
+  
+}
+
+.links_nav li a:hover::after {
+
+  width: 70%;
+  
+}
+
