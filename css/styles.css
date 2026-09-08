@@ -8,7 +8,7 @@
 }
 
 body{
-  background-color: grey;
+  background-color: var(--bg-white);
 }
 
 :root {
@@ -89,3 +89,48 @@ body{
   
 }
 
+#proyectos {
+  margin-top: 200px;
+}
+
+
+.card {
+  width: 450px;
+  box-shadow: var(--shadow-hover)
+  
+}
+
+
+
+.badges span {
+  font-size: 14px;
+  background-color: #aebcfb;
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+}
+
+.btn_project {
+  width: 30%;
+  margin:16px 0 0 0;
+  color: var(--primary-color);
+  background-color: var(--bg-light);
+  font-weight: bold;
+  border: 2px solid var(--primary-color);
+}
+
+
+#testimonios {
+  margin-top: 200px;
+}
+
+.img_carr {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  margin: 100px auto 200px auto;
+
+}
+
+.btn_carr {
+  margin-top: 100px;
+}
