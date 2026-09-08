@@ -1,16 +1,21 @@
+/* ========================================
+   RESET
+======================================== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  
 }
 
-body{
-  background-color: grey;
+html {
+  scroll-behavior: smooth;
 }
 
+/* ========================================
+   VARIABLES
+======================================== */
 :root {
 
   /* Gradientes */
@@ -32,7 +37,7 @@ body{
   /* Fondos */
   --bg-white: #ffffff;                                                                            
   --bg-light: #f7fafc;                                                                            
-  --bg-dar: #1a1a2e;                                                                            
+  --bg-dark: #1a1a2e;                                                                            
   --bg-footer: #0f0f1e;    
   
   /* Orvelay */
@@ -48,44 +53,401 @@ body{
   --transition-base: all 0.3s ease;  
 }
 
+/* ========================================
+   BASE
+======================================== */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg-white);
+  color: var(--text-primary);
+}
+
+/* Offset for the fixed navbar when jumping to an anchor */
+section[id] {
+  scroll-margin-top: 90px;
+}
+
+/* Shared section headings and copy */
+.section-title {
+  font-weight: 700;
+  color: var(--text-primary);
+  font-size: 2.5rem;
+}
+
+.section-text {
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+/* ========================================
+   NAVBAR
+======================================== */
+.navbar {
+  box-shadow: var(--shadow-sm);
+}
+
 .logo {
-  width: 80px;
-  height:80px;
-  margin-bottom: 15px;
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
 }
 
-.btn_contact {
-  background: var(--gradient-primary);
-  color: var(--light-color);
+.navbar-brand {
+  color: var(--dark-color);
 }
 
-.links_nav li a{
+.navbar-nav .nav-link {
   position: relative;
   color: var(--dark-color);
-  
+  font-weight: 500;
 }
 
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: var(--primary-color);
+}
 
-.links_nav li a::after {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.navbar-nav .nav-link::after {
   content: "";
-  position: absolute; 
-  bottom: -14px; 
-  
-  transform: translateX(20%); 
-  width: 0; 
-  
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
   height: 2px;
   background: var(--gradient-primary);
   transition: width 0.3s ease;
-  
 }
 
-.links_nav li a:hover::after {
-
-  width: 70%;
-  
+.navbar-nav .nav-link:hover::after {
+  width: 80%;
 }
 
+/* CTA button keeps the gradient and never shows the underline */
+.btn-contact {
+  background: var(--gradient-primary);
+  color: var(--text-light);
+  border: none;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-base);
+}
+
+.btn-contact:hover,
+.btn-contact:focus {
+  color: var(--text-light);
+  box-shadow: var(--shadow-hover);
+}
+
+/* ========================================
+   HERO SECTION
+======================================== */
+#hero {
+  position: relative;
+  background-image: url("../assets/images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: var(--dark-color);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 0 80px;
+}
+
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--overlay-gradient);
+  z-index: 1;
+}
+
+#hero .hero-content {
+  position: relative;
+  z-index: 2;
+  color: var(--text-light);
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.hero-description {
+  max-width: 640px;
+  font-size: 1.125rem;
+  margin-bottom: 2.5rem;
+}
+
+.btn-hero-primary {
+  background: var(--gradient-primary);
+  color: var(--text-light);
+  border: none;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-base);
+}
+
+.btn-hero-primary:hover,
+.btn-hero-primary:focus {
+  color: var(--text-light);
+  box-shadow: var(--shadow-hover);
+}
+
+.btn-hero-outline {
+  background: transparent;
+  color: var(--text-light);
+  border: 2px solid var(--text-light);
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-base);
+}
+
+.btn-hero-outline:hover,
+.btn-hero-outline:focus {
+  background: var(--text-light);
+  color: var(--primary-color);
+}
+
+/* ========================================
+   SOBRE MÍ
+======================================== */
+#sobre-mi {
+  background-color: var(--bg-white);
+}
+
+.profile-img {
+  max-width: 320px;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid transparent;
+  background: var(--gradient-primary) border-box;
+  box-shadow: var(--shadow-lg);
+}
+
+.interests-list {
+  margin-top: 1.5rem;
+}
+
+.interests-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.interests-list i {
+  color: var(--primary-color);
+  font-size: 1.25rem;
+  width: 1.75rem;
+  text-align: center;
+}
+
+/* ========================================
+   HABILIDADES
+======================================== */
+#habilidades {
+  background-color: var(--bg-light);
+}
+
+.skill-card {
+  background-color: var(--bg-white);
+  transition: var(--transition-base);
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-hover) !important;
+}
+
+.skill-icon i {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+}
+
+.skill-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.skill-item {
+  margin-bottom: 1.25rem;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.skill-item .progress {
+  height: 8px;
+  margin-top: 0.35rem;
+  background-color: var(--bg-light);
+}
+
+.progress-bar {
+  background: var(--gradient-primary);
+}
+
+/* ========================================
+   PROYECTOS
+======================================== */
+#proyectos {
+  background-color: var(--bg-white);
+}
+
+.project-card {
+  background-color: var(--bg-white);
+  transition: var(--transition-base);
+  overflow: hidden;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-hover) !important;
+}
+
+.project-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.project-card .card-title {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.project-card .card-text {
+  color: var(--text-secondary);
+}
+
+.project-badge {
+  background: var(--gradient-light);
+  color: var(--secondary-color);
+  font-weight: 500;
+}
+
+/* ========================================
+   PROJECT MODALS
+======================================== */
+.modal-header {
+  background: var(--gradient-primary);
+  border-bottom: none;
+}
+
+.modal-header .modal-title {
+  color: var(--text-light);
+  font-weight: 600;
+}
+
+.modal-project-img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1.25rem;
+}
+
+/*
+  The global reset applies `list-style: none` to every element, so it also hits
+  each <li> directly. The marker belongs to the <li>, not to the <ul>, so
+  declaring `list-style` only on `.modal-features` gets overridden on the items.
+  The bullets have to be restored on `.modal-features li`.
+*/
+.modal-features {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+
+.modal-features li {
+  list-style: disc outside;
+  color: var(--text-primary);
+  margin-bottom: 0.35rem;
+}
+
+.modal-body h6 {
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.modal-footer .btn {
+  min-height: 44px;
+}
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background: var(--bg-white);
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 0.5rem;
+  }
+
+  .navbar-nav .nav-link {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-nav .nav-link::after {
+    display: none;
+  }
+
+  .btn-contact {
+    width: 100%;
+  }
+
+  .hero-title {
+    font-size: 2.75rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .hero-title {
+    font-size: 2.25rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .profile-img {
+    max-width: 250px;
+  }
+
+  .project-img {
+    height: 180px;
+  }
+}

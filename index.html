@@ -3,36 +3,793 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio personal de John Doe, desarrollador Full Stack especializado en el stack MERN."
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/styles.css" />
     <title>Portfolio Personal</title>
   </head>
   <body>
-    <header
-      class="w-100 h-auto d-flex justify-content-center align-items-center"
-    >
-      <nav
-        class="w-100 d-flex justify-content-around align-items-center navbar navbar-expand-lg navbar-light bg-white fixed-top navbar-toggler"
-      >
-        <img class="logo" src="assets/images/logo.png" alt="Logo" />
+    <!-- ======= NAVBAR ======= -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center gap-2" href="#hero">
+            <img
+              class="logo"
+              src="assets/images/logo.png"
+              alt="Logo de John Doe"
+            />
+            <span class="fw-semibold">John Doe</span>
+          </a>
 
-        <ul class="links_nav d-flex align-items-center gap-4 border border-solid-red">
-          <li><a class="text-decoration-none" href="">Inicio</a></li>
-          <li><a class="text-decoration-none" href="">Sobre mi</a></li>
-          <li><a class="text-decoration-none" href="">Habilidades</a></li>
-          <li><a class="text-decoration-none" href="">Proyectos</a></li>
-          <li><a class="text-decoration-none" href="">Testimonios</a></li>
-          <button class="btn_contact border border-none rounded-pill p-3">
-            Contáctame
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
           </button>
-        </ul>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+              <li class="nav-item"><a class="nav-link" href="#hero">Inicio</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sobre-mi">Sobre Mí</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#habilidades">Habilidades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#proyectos">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonios">Testimonios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto">Contacto</a>
+              </li>
+              <li class="nav-item ms-lg-3">
+                <a class="btn btn-contact rounded-pill px-4" href="#contacto">
+                  Contáctame
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
+
+    <main>
+      <!-- ======= HERO ======= -->
+      <section id="hero">
+        <div class="container">
+          <div class="hero-content text-center">
+            <h1 class="hero-title">Hola, soy John Doe</h1>
+            <h2 class="hero-subtitle">
+              Desarrollador Full Stack | Creador de Experiencias Web
+            </h2>
+            <p class="hero-description mx-auto">
+              Transformo ideas en aplicaciones web modernas y funcionales.
+              Especializado en el stack MERN con pasión por el diseño limpio y
+              código eficiente.
+            </p>
+            <div
+              class="d-flex flex-column flex-sm-row justify-content-center gap-3"
+            >
+              <a href="#proyectos" class="btn btn-hero-primary rounded-pill px-4">
+                Ver Mis Proyectos
+              </a>
+              <a href="#" class="btn btn-hero-outline rounded-pill px-4">
+                Descargar CV
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======= SOBRE MÍ ======= -->
+      <section id="sobre-mi" class="py-5">
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <div class="col-12 col-md-6 text-center">
+              <img
+                src="assets/images/profile.svg"
+                alt="Foto de perfil de John Doe"
+                class="img-fluid profile-img"
+              />
+            </div>
+            <div class="col-12 col-md-6">
+              <h2 class="section-title text-center text-md-start">Sobre Mí</h2>
+              <p class="section-text">
+                Soy un desarrollador full stack apasionado por crear soluciones
+                digitales que generen impacto. Con experiencia en tecnologías
+                modernas como React, Node.js y MongoDB, me especializo en
+                construir aplicaciones web escalables y centradas en el usuario.
+              </p>
+              <p class="section-text">
+                Cuando no estoy programando, disfruto contribuir a proyectos
+                open source, aprender nuevas tecnologías y compartir
+                conocimiento con la comunidad de desarrolladores.
+              </p>
+              <ul class="interests-list">
+                <li>
+                  <i class="fas fa-laptop-code" aria-hidden="true"></i>
+                  <span>Desarrollo Web Moderno</span>
+                </li>
+                <li>
+                  <i class="fas fa-palette" aria-hidden="true"></i>
+                  <span>UI/UX Design</span>
+                </li>
+                <li>
+                  <i class="fab fa-github" aria-hidden="true"></i>
+                  <span>Open Source</span>
+                </li>
+                <li>
+                  <i class="fas fa-book" aria-hidden="true"></i>
+                  <span>Aprendizaje Continuo</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======= HABILIDADES ======= -->
+      <section id="habilidades" class="py-5">
+        <div class="container">
+          <h2 class="section-title text-center mb-5">Mis Habilidades</h2>
+          <div class="row g-4">
+            <!-- Frontend -->
+            <div class="col-12 col-md-4">
+              <div class="card skill-card h-100 border-0 shadow-sm">
+                <div class="card-body p-4">
+                  <div class="skill-icon text-center mb-3">
+                    <i class="fas fa-code" aria-hidden="true"></i>
+                  </div>
+                  <h3 class="skill-title text-center mb-4">Frontend</h3>
+
+                  <div class="skill-item">
+                    <div class="d-flex justify-content-between">
+                      <span>HTML5 &amp; CSS3</span>
+                      <span>90%</span>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 90%"
+                        aria-label="Nivel de HTML5 y CSS3"
+                        aria-valuenow="90"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div class="skill-item">
+                    <div class="d-flex justify-content-between">
+                      <span>JavaScript ES6+</span>
+                      <span>85%</span>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 85%"
+                        aria-label="Nivel de JavaScript ES6+"
+                        aria-valuenow="85"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div class="skill-item">
+                    <div class="d-flex justify-content-between">
+                      <span>React.js</span>
+                      <span>80%</span>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 80%"
+                        aria-label="Nivel de React.js"
+                        aria-valuenow="80"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div class="skill-item">
+                    <div class="d-flex justify-content-between">
+                      <span>Bootstrap 5</span>
+                      <span>85%</span>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 85%"
+                        aria-label="Nivel de Bootstrap 5"
+                        aria-valuenow="85"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Backend -->
+            <div class="col-12 col-md-4">
+              <div class="card skill-card h-100 border-0 shadow-sm">
+                <div class="card-body p-4">
+                  <div class="skill-icon text-center mb-3">
+                    <i class="fas fa-server" aria-hidden="true"></i>
+                  </div>
+                  <h3 class="skill-title text-center mb-4">Backend</h3>
+
+                  <div class="skill-item">
+                    <div class="d-flex justify-content-between">
+                      <span>Node.js</span>
+                      <span>75%</span>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 75%"
+                        aria-label="Nivel de Node.js"
+                        aria-valuenow="75"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div class="skill-item">
+                    <div class="d-flex justify-content-between">
+                      <span>Express.js</span>
+                      <span>80%</span>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 80%"
+                        aria-label="Nivel de Express.js"
+                        aria-valuenow="80"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div class="skill-item">
+                    <div class="d-flex justify-content-between">
+                      <span>MongoDB</span>
+                      <span>70%</span>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 70%"
+                        aria-label="Nivel de MongoDB"
+                        aria-valuenow="70"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div class="skill-item">
+                    <div class="d-flex justify-content-between">
+                      <span>RESTful APIs</span>
+                      <span>85%</span>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 85%"
+                        aria-label="Nivel de RESTful APIs"
+                        aria-valuenow="85"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Herramientas -->
+            <div class="col-12 col-md-4">
+              <div class="card skill-card h-100 border-0 shadow-sm">
+                <div class="card-body p-4">
+                  <div class="skill-icon text-center mb-3">
+                    <i class="fas fa-screwdriver-wrench" aria-hidden="true"></i>
+                  </div>
+                  <h3 class="skill-title text-center mb-4">Herramientas</h3>
+
+                  <div class="skill-item">
+                    <div class="d-flex justify-content-between">
+                      <span>Git &amp; GitHub</span>
+                      <span>90%</span>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 90%"
+                        aria-label="Nivel de Git y GitHub"
+                        aria-valuenow="90"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div class="skill-item">
+                    <div class="d-flex justify-content-between">
+                      <span>VS Code</span>
+                      <span>95%</span>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 95%"
+                        aria-label="Nivel de VS Code"
+                        aria-valuenow="95"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div class="skill-item">
+                    <div class="d-flex justify-content-between">
+                      <span>Postman</span>
+                      <span>80%</span>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 80%"
+                        aria-label="Nivel de Postman"
+                        aria-valuenow="80"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div class="skill-item">
+                    <div class="d-flex justify-content-between">
+                      <span>Figma</span>
+                      <span>70%</span>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 70%"
+                        aria-label="Nivel de Figma"
+                        aria-valuenow="70"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======= PROYECTOS ======= -->
+      <section id="proyectos" class="py-5">
+        <div class="container">
+          <h2 class="section-title text-center mb-5">Mis Proyectos</h2>
+          <div class="row g-4">
+            <!-- Project 1 -->
+            <div class="col-12 col-md-6">
+              <article class="card project-card h-100 border-0 shadow-sm">
+                <img
+                  src="assets/images/proyecto1.avif"
+                  class="card-img-top project-img"
+                  alt="Captura del proyecto E-Commerce Platform"
+                />
+                <div class="card-body d-flex flex-column">
+                  <h3 class="card-title h5">E-Commerce Platform</h3>
+                  <p class="card-text">
+                    Plataforma de comercio electrónico completa con carrito de
+                    compras, pasarela de pagos y panel de administración.
+                  </p>
+                  <div class="mb-3 d-flex flex-wrap gap-2">
+                    <span class="badge project-badge">React</span>
+                    <span class="badge project-badge">Node.js</span>
+                    <span class="badge project-badge">MongoDB</span>
+                    <span class="badge project-badge">Stripe</span>
+                    <span class="badge project-badge">Express</span>
+                  </div>
+                  <button
+                    type="button"
+                    class="btn btn-hero-primary rounded-pill mt-auto align-self-start px-4"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalProyecto1"
+                  >
+                    Ver más
+                  </button>
+                </div>
+              </article>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="col-12 col-md-6">
+              <article class="card project-card h-100 border-0 shadow-sm">
+                <img
+                  src="assets/images/proyecto2.jpg"
+                  class="card-img-top project-img"
+                  alt="Captura del proyecto Task Manager App"
+                />
+                <div class="card-body d-flex flex-column">
+                  <h3 class="card-title h5">Task Manager App</h3>
+                  <p class="card-text">
+                    Aplicación de gestión de tareas con drag &amp; drop,
+                    categorías personalizadas y sincronización en tiempo real.
+                  </p>
+                  <div class="mb-3 d-flex flex-wrap gap-2">
+                    <span class="badge project-badge">React</span>
+                    <span class="badge project-badge">Firebase</span>
+                    <span class="badge project-badge">Material-UI</span>
+                    <span class="badge project-badge">Real-time</span>
+                  </div>
+                  <button
+                    type="button"
+                    class="btn btn-hero-primary rounded-pill mt-auto align-self-start px-4"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalProyecto2"
+                  >
+                    Ver más
+                  </button>
+                </div>
+              </article>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="col-12 col-md-6">
+              <article class="card project-card h-100 border-0 shadow-sm">
+                <img
+                  src="assets/images/proyecto3.jpg"
+                  class="card-img-top project-img"
+                  alt="Captura del proyecto Weather Dashboard"
+                />
+                <div class="card-body d-flex flex-column">
+                  <h3 class="card-title h5">Weather Dashboard</h3>
+                  <p class="card-text">
+                    Dashboard meteorológico con pronóstico de 7 días, mapas
+                    interactivos y alertas personalizadas.
+                  </p>
+                  <div class="mb-3 d-flex flex-wrap gap-2">
+                    <span class="badge project-badge">JavaScript</span>
+                    <span class="badge project-badge">API</span>
+                    <span class="badge project-badge">Chart.js</span>
+                    <span class="badge project-badge">Vanilla JS</span>
+                  </div>
+                  <button
+                    type="button"
+                    class="btn btn-hero-primary rounded-pill mt-auto align-self-start px-4"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalProyecto3"
+                  >
+                    Ver más
+                  </button>
+                </div>
+              </article>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="col-12 col-md-6">
+              <article class="card project-card h-100 border-0 shadow-sm">
+                <img
+                  src="assets/images/proyecto4.jpg"
+                  class="card-img-top project-img"
+                  alt="Captura del proyecto Portfolio Generator"
+                />
+                <div class="card-body d-flex flex-column">
+                  <h3 class="card-title h5">Portfolio Generator</h3>
+                  <p class="card-text">
+                    Generador de portfolios personalizables con múltiples
+                    templates y exportación a HTML/CSS.
+                  </p>
+                  <div class="mb-3 d-flex flex-wrap gap-2">
+                    <span class="badge project-badge">Vue.js</span>
+                    <span class="badge project-badge">Node.js</span>
+                    <span class="badge project-badge">Express</span>
+                    <span class="badge project-badge">SPA</span>
+                  </div>
+                  <button
+                    type="button"
+                    class="btn btn-hero-primary rounded-pill mt-auto align-self-start px-4"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalProyecto4"
+                  >
+                    Ver más
+                  </button>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project modals -->
+        <div
+          class="modal fade"
+          id="modalProyecto1"
+          tabindex="-1"
+          aria-labelledby="modalProyecto1Label"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalProyecto1Label">
+                  E-Commerce Platform
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close btn-close-white"
+                  data-bs-dismiss="modal"
+                  aria-label="Cerrar"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <img
+                  src="assets/images/proyecto1.avif"
+                  class="img-fluid modal-project-img"
+                  alt="Captura de la plataforma E-Commerce Platform"
+                />
+                <p>
+                  Desarrollé una plataforma de e-commerce completa desde cero
+                  utilizando el stack MERN. La aplicación incluye un sistema de
+                  autenticación robusto, carrito de compras persistente,
+                  integración con Stripe para pagos seguros, y un panel de
+                  administración completo para gestionar productos, órdenes y
+                  usuarios.
+                </p>
+                <h6 class="fw-semibold">Características principales:</h6>
+                <ul class="modal-features">
+                  <li>Autenticación de usuarios con JWT</li>
+                  <li>Carrito de compras con persistencia en base de datos</li>
+                  <li>Pasarela de pagos Stripe integrada</li>
+                  <li>Panel de administración completo</li>
+                  <li>Sistema de búsqueda y filtros avanzados</li>
+                  <li>Diseño responsive y accesible</li>
+                </ul>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge project-badge">React</span>
+                  <span class="badge project-badge">Node.js</span>
+                  <span class="badge project-badge">MongoDB</span>
+                  <span class="badge project-badge">Stripe</span>
+                  <span class="badge project-badge">Express</span>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#" class="btn btn-outline-primary">Ver Demo</a>
+                <a href="#" class="btn btn-hero-primary">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="modal fade"
+          id="modalProyecto2"
+          tabindex="-1"
+          aria-labelledby="modalProyecto2Label"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalProyecto2Label">
+                  Task Manager App
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close btn-close-white"
+                  data-bs-dismiss="modal"
+                  aria-label="Cerrar"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <img
+                  src="assets/images/proyecto2.jpg"
+                  class="img-fluid modal-project-img"
+                  alt="Captura de la aplicación Task Manager App"
+                />
+                <p>
+                  Aplicación web moderna para gestión de tareas y proyectos
+                  inspirada en herramientas como Trello. Implementé
+                  funcionalidad de arrastrar y soltar usando React DND,
+                  sincronización en tiempo real con Firebase, y un diseño
+                  intuitivo con Material-UI.
+                </p>
+                <h6 class="fw-semibold">Características principales:</h6>
+                <ul class="modal-features">
+                  <li>Drag &amp; drop entre columnas de estado</li>
+                  <li>Sincronización en tiempo real</li>
+                  <li>Categorías y etiquetas personalizables</li>
+                  <li>Sistema de prioridades y fechas límite</li>
+                  <li>Modo colaborativo (múltiples usuarios)</li>
+                  <li>Dark mode integrado</li>
+                </ul>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge project-badge">React</span>
+                  <span class="badge project-badge">Firebase</span>
+                  <span class="badge project-badge">Material-UI</span>
+                  <span class="badge project-badge">Real-time</span>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#" class="btn btn-outline-primary">Ver Demo</a>
+                <a href="#" class="btn btn-hero-primary">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="modal fade"
+          id="modalProyecto3"
+          tabindex="-1"
+          aria-labelledby="modalProyecto3Label"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalProyecto3Label">
+                  Weather Dashboard
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close btn-close-white"
+                  data-bs-dismiss="modal"
+                  aria-label="Cerrar"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <img
+                  src="assets/images/proyecto3.jpg"
+                  class="img-fluid modal-project-img"
+                  alt="Captura del panel Weather Dashboard"
+                />
+                <p>
+                  Dashboard meteorológico interactivo que consume datos de la
+                  API de OpenWeather. Incluye visualización de datos con
+                  gráficos, mapas interactivos, y sistema de alertas para
+                  condiciones climáticas específicas. El proyecto demuestra
+                  habilidades en consumo de APIs, visualización de datos y
+                  diseño responsive.
+                </p>
+                <h6 class="fw-semibold">Características principales:</h6>
+                <ul class="modal-features">
+                  <li>Pronóstico extendido de 7 días</li>
+                  <li>Datos en tiempo real de múltiples ciudades</li>
+                  <li>Gráficos interactivos con Chart.js</li>
+                  <li>Mapas de temperatura y precipitación</li>
+                  <li>Sistema de alertas personalizables</li>
+                  <li>Búsqueda por ubicación</li>
+                </ul>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge project-badge">JavaScript</span>
+                  <span class="badge project-badge">API</span>
+                  <span class="badge project-badge">Chart.js</span>
+                  <span class="badge project-badge">Vanilla JS</span>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#" class="btn btn-outline-primary">Ver Demo</a>
+                <a href="#" class="btn btn-hero-primary">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="modal fade"
+          id="modalProyecto4"
+          tabindex="-1"
+          aria-labelledby="modalProyecto4Label"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalProyecto4Label">
+                  Portfolio Generator
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close btn-close-white"
+                  data-bs-dismiss="modal"
+                  aria-label="Cerrar"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <img
+                  src="assets/images/proyecto4.jpg"
+                  class="img-fluid modal-project-img"
+                  alt="Captura de la herramienta Portfolio Generator"
+                />
+                <p>
+                  Herramienta web que permite a desarrolladores y diseñadores
+                  crear portfolios profesionales sin escribir código. Los
+                  usuarios pueden elegir entre varios templates, personalizar
+                  colores y contenido, previsualizar en tiempo real, y exportar
+                  el código HTML/CSS completo.
+                </p>
+                <h6 class="fw-semibold">Características principales:</h6>
+                <ul class="modal-features">
+                  <li>5 templates profesionales</li>
+                  <li>Editor visual intuitivo</li>
+                  <li>Previsualización en tiempo real</li>
+                  <li>Personalización de colores y fuentes</li>
+                  <li>Exportación de código limpio</li>
+                  <li>Responsive por defecto</li>
+                </ul>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge project-badge">Vue.js</span>
+                  <span class="badge project-badge">Node.js</span>
+                  <span class="badge project-badge">Express</span>
+                  <span class="badge project-badge">SPA</span>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#" class="btn btn-outline-primary">Ver Demo</a>
+                <a href="#" class="btn btn-hero-primary">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sections 6-8 (Testimonios, Contacto, Footer) handled by teammate -->
+    </main>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"

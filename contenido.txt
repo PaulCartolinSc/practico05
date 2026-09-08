@@ -1,0 +1,344 @@
+==============================================
+  CONTENIDO COMPLETO - PORTFOLIO JOHN DOE
+==============================================
+
+Usa este contenido EXACTAMENTE como está escrito.
+Copia y pega según corresponda a cada sección.
+
+==============================================
+NAVBAR
+==============================================
+
+Logo/Nombre: John Doe
+Iniciales Logo: JD
+
+Links de Navegación:
+- Inicio
+- Sobre Mí
+- Habilidades
+- Proyectos
+- Testimonios
+- Contacto
+
+Botón CTA: Contáctame
+
+==============================================
+HERO SECTION
+==============================================
+
+Título: Hola, soy John Doe
+
+Subtítulo: Desarrollador Full Stack | Creador de Experiencias Web
+
+Descripción: 
+Transformo ideas en aplicaciones web modernas y funcionales. Especializado en el stack MERN con pasión por el diseño limpio y código eficiente.
+
+Botón 1: Ver Mis Proyectos
+Botón 2: Descargar CV
+
+==============================================
+SOBRE MÍ
+==============================================
+
+Título de Sección: Sobre Mí
+
+Párrafo 1:
+Soy un desarrollador full stack apasionado por crear soluciones digitales que generen impacto. Con experiencia en tecnologías modernas como React, Node.js y MongoDB, me especializo en construir aplicaciones web escalables y centradas en el usuario.
+
+Párrafo 2:
+Cuando no estoy programando, disfruto contribuir a proyectos open source, aprender nuevas tecnologías y compartir conocimiento con la comunidad de desarrolladores.
+
+Lista de Intereses:
+- Desarrollo Web Moderno
+- UI/UX Design
+- Open Source
+- Aprendizaje Continuo
+
+==============================================
+HABILIDADES
+==============================================
+
+Título de Sección: Mis Habilidades
+
+--- CATEGORÍA 1: FRONTEND ---
+
+Habilidad 1:
+Nombre: HTML5 & CSS3
+Porcentaje: 90%
+
+Habilidad 2:
+Nombre: JavaScript ES6+
+Porcentaje: 85%
+
+Habilidad 3:
+Nombre: React.js
+Porcentaje: 80%
+
+Habilidad 4:
+Nombre: Bootstrap 5
+Porcentaje: 85%
+
+--- CATEGORÍA 2: BACKEND ---
+
+Habilidad 1:
+Nombre: Node.js
+Porcentaje: 75%
+
+Habilidad 2:
+Nombre: Express.js
+Porcentaje: 80%
+
+Habilidad 3:
+Nombre: MongoDB
+Porcentaje: 70%
+
+Habilidad 4:
+Nombre: RESTful APIs
+Porcentaje: 85%
+
+--- CATEGORÍA 3: HERRAMIENTAS ---
+
+Habilidad 1:
+Nombre: Git & GitHub
+Porcentaje: 90%
+
+Habilidad 2:
+Nombre: VS Code
+Porcentaje: 95%
+
+Habilidad 3:
+Nombre: Postman
+Porcentaje: 80%
+
+Habilidad 4:
+Nombre: Figma
+Porcentaje: 70%
+
+==============================================
+PROYECTOS
+==============================================
+
+Título de Sección: Mis Proyectos
+
+--- PROYECTO 1 ---
+
+Nombre: E-Commerce Platform
+Descripción Breve: Plataforma de comercio electrónico completa con carrito de compras, pasarela de pagos y panel de administración.
+
+Descripción Completa (para Modal):
+Desarrollé una plataforma de e-commerce completa desde cero utilizando el stack MERN. La aplicación incluye un sistema de autenticación robusto, carrito de compras persistente, integración con Stripe para pagos seguros, y un panel de administración completo para gestionar productos, órdenes y usuarios.
+
+Características principales:
+• Autenticación de usuarios con JWT
+• Carrito de compras con persistencia en base de datos
+• Pasarela de pagos Stripe integrada
+• Panel de administración completo
+• Sistema de búsqueda y filtros avanzados
+• Diseño responsive y accesible
+
+Tecnologías: React, Node.js, MongoDB, Stripe
+Tags: React, Node.js, MongoDB, Stripe, Express
+
+Link Demo: #
+Link GitHub: #
+
+--- PROYECTO 2 ---
+
+Nombre: Task Manager App
+Descripción Breve: Aplicación de gestión de tareas con drag & drop, categorías personalizadas y sincronización en tiempo real.
+
+Descripción Completa (para Modal):
+Aplicación web moderna para gestión de tareas y proyectos inspirada en herramientas como Trello. Implementé funcionalidad de arrastrar y soltar usando React DND, sincronización en tiempo real con Firebase, y un diseño intuitivo con Material-UI.
+
+Características principales:
+• Drag & drop entre columnas de estado
+• Sincronización en tiempo real
+• Categorías y etiquetas personalizables
+• Sistema de prioridades y fechas límite
+• Modo colaborativo (múltiples usuarios)
+• Dark mode integrado
+
+Tecnologías: React, Firebase, Material-UI
+Tags: React, Firebase, Material-UI, Real-time
+
+Link Demo: #
+Link GitHub: #
+
+--- PROYECTO 3 ---
+
+Nombre: Weather Dashboard
+Descripción Breve: Dashboard meteorológico con pronóstico de 7 días, mapas interactivos y alertas personalizadas.
+
+Descripción Completa (para Modal):
+Dashboard meteorológico interactivo que consume datos de la API de OpenWeather. Incluye visualización de datos con gráficos, mapas interactivos, y sistema de alertas para condiciones climáticas específicas. El proyecto demuestra habilidades en consumo de APIs, visualización de datos y diseño responsive.
+
+Características principales:
+• Pronóstico extendido de 7 días
+• Datos en tiempo real de múltiples ciudades
+• Gráficos interactivos con Chart.js
+• Mapas de temperatura y precipitación
+• Sistema de alertas personalizables
+• Búsqueda por ubicación
+
+Tecnologías: JavaScript, OpenWeather API, Chart.js
+Tags: JavaScript, API, Chart.js, Vanilla JS
+
+Link Demo: #
+Link GitHub: #
+
+--- PROYECTO 4 ---
+
+Nombre: Portfolio Generator
+Descripción Breve: Generador de portfolios personalizables con múltiples templates y exportación a HTML/CSS.
+
+Descripción Completa (para Modal):
+Herramienta web que permite a desarrolladores y diseñadores crear portfolios profesionales sin escribir código. Los usuarios pueden elegir entre varios templates, personalizar colores y contenido, previsualizar en tiempo real, y exportar el código HTML/CSS completo.
+
+Características principales:
+• 5 templates profesionales
+• Editor visual intuitivo
+• Previsualización en tiempo real
+• Personalización de colores y fuentes
+• Exportación de código limpio
+• Responsive por defecto
+
+Tecnologías: Vue.js, Node.js, Express
+Tags: Vue.js, Node.js, Express, SPA
+
+Link Demo: #
+Link GitHub: #
+
+==============================================
+TESTIMONIOS
+==============================================
+
+Título de Sección: Lo Que Dicen de Mí
+
+--- TESTIMONIO 1 ---
+
+Texto del Testimonio:
+"John es un desarrollador excepcional. Su capacidad para resolver problemas complejos y entregar código limpio es impresionante. Fue clave en el éxito de nuestro proyecto."
+
+Nombre: Sarah Johnson
+Cargo: Project Manager en Tech Solutions
+
+--- TESTIMONIO 2 ---
+
+Texto del Testimonio:
+"Trabajar con John fue una experiencia fantástica. Su profesionalismo y atención al detalle superaron nuestras expectativas. Altamente recomendado."
+
+Nombre: Michael Chen
+Cargo: CEO en StartupXYZ
+
+--- TESTIMONIO 3 ---
+
+Texto del Testimonio:
+"John no solo tiene habilidades técnicas sólidas, sino también una gran capacidad para comunicarse y trabajar en equipo. Un activo valioso para cualquier proyecto."
+
+Nombre: Emma Williams
+Cargo: Lead Designer en Digital Agency
+
+==============================================
+CONTACTO
+==============================================
+
+Título de Sección: Hablemos
+
+Subtítulo (opcional):
+¿Tienes un proyecto en mente? ¡Me encantaría escucharlo!
+
+--- FORMULARIO ---
+
+Campo 1:
+Label: Nombre Completo
+Placeholder: Tu nombre
+Type: text
+Name: nombre
+ID: nombre
+Required: Sí
+
+Campo 2:
+Label: Correo Electrónico
+Placeholder: tu@email.com
+Type: email
+Name: email
+ID: email
+Required: Sí
+
+Campo 3:
+Label: Asunto
+Placeholder: Asunto del mensaje
+Type: text
+Name: asunto
+ID: asunto
+Required: Sí
+
+Campo 4:
+Label: Mensaje
+Placeholder: Escribe tu mensaje aquí...
+Type: textarea
+Rows: 5
+Name: mensaje
+ID: mensaje
+Required: Sí
+
+Botón Submit: Enviar Mensaje
+
+--- INFORMACIÓN DE CONTACTO ---
+
+Email: john.doe@email.com
+Teléfono (opcional): +1 (555) 123-4567
+Ubicación (opcional): San Francisco, CA
+
+--- REDES SOCIALES ---
+
+GitHub: 
+- URL: https://github.com/johndoe
+- Texto: github.com/johndoe
+
+LinkedIn:
+- URL: https://linkedin.com/in/johndoe
+- Texto: linkedin.com/in/johndoe
+
+Twitter:
+- URL: https://twitter.com/johndoe
+- Texto: @johndoe
+
+Email:
+- URL: mailto:john.doe@email.com
+- Texto: john.doe@email.com
+
+==============================================
+FOOTER
+==============================================
+
+Logo: JD
+Nombre: John Doe
+
+Copyright: © 2026 John Doe. Todos los derechos reservados.
+
+Texto Adicional: Hecho con ❤️ y Bootstrap
+
+--- LINKS RÁPIDOS ---
+
+- Sobre Mí
+- Proyectos
+- Contacto
+
+--- REDES SOCIALES (Iconos) ---
+
+- GitHub: https://github.com/johndoe
+- LinkedIn: https://linkedin.com/in/johndoe
+- Twitter: https://twitter.com/johndoe
+
+==============================================
+FIN DEL CONTENIDO
+==============================================
+
+NOTAS IMPORTANTES:
+
+1. Usa este contenido EXACTAMENTE como aparece aquí
+2. Para los porcentajes de habilidades, usa el número exacto (ej: 90%)
+3. Los links (#) son placeholders - déjalos así por ahora
+4. Los emojis (❤️) deben aparecer en el código tal cual
+5. Para las imágenes, consulta assets/images/README.md
