@@ -788,22 +788,19 @@
         </div>
       </section>
       <!-- ======= TESTIMONIOS ======= -->
-      <section
-        id="testimonios"
-        class="w-100 flex justify-content-center align-items-center"
-      >
-        <div class="m-auto carousel-dark">
-          <h2>Lo Que Dicen de Mí</h2>
+      <section id="testimonios" class="py-5">
+        <div class="container">
+          <h2 class="section-title text-center mb-5">Lo Que Dicen de Mí</h2>
           <div
-            id="carouselExampleCaptions"
-            class="carousel slide"
+            id="carouselTestimonios"
+            class="carousel carousel-dark slide"
             data-bs-ride="carousel"
             data-bs-interval="5000"
           >
             <div class="carousel-indicators">
               <button
                 type="button"
-                data-bs-target="#carouselExampleCaptions"
+                data-bs-target="#carouselTestimonios"
                 data-bs-slide-to="0"
                 class="active"
                 aria-current="true"
@@ -811,73 +808,83 @@
               ></button>
               <button
                 type="button"
-                data-bs-target="#carouselExampleCaptions"
+                data-bs-target="#carouselTestimonios"
                 data-bs-slide-to="1"
                 aria-label="Slide 2"
               ></button>
               <button
                 type="button"
-                data-bs-target="#carouselExampleCaptions"
+                data-bs-target="#carouselTestimonios"
                 data-bs-slide-to="2"
                 aria-label="Slide 3"
               ></button>
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img
-                  src="assets/images/testimonial1.jpg"
-                  class="img_carr d-block"
-                  alt="Retrato de Sarah Johnson"
-                />
-                <div class="carousel-caption text-black">
-                  <p class="">
+                <div
+                  class="testimonial-slide d-flex flex-column align-items-center text-center mx-auto"
+                >
+                  <img
+                    src="assets/images/testimonial1.jpg"
+                    class="img_carr mb-3"
+                    alt="Retrato de Sarah Johnson"
+                  />
+                  <p class="section-text">
                     "John es un desarrollador excepcional. Su capacidad para
                     resolver problemas complejos y entregar código limpio es
                     impresionante. Fue clave en el éxito de nuestro proyecto."
                   </p>
-                  <h5>Nombre: Sarah Johnson</h5>
-                  <h6>Cargo: Project Manager en Tech Solutions</h6>
+                  <h5 class="fw-semibold mb-1">Sarah Johnson</h5>
+                  <h6 class="testimonial-role mb-0">
+                    Project Manager en Tech Solutions
+                  </h6>
                 </div>
               </div>
 
               <div class="carousel-item">
-                <img
-                  src="assets/images/testimonial2.jpg"
-                  class="img_carr d-block"
-                  alt="Retrato de Michael Chen"
-                />
-                <div class="carousel-caption text-black">
-                  <p class="">
+                <div
+                  class="testimonial-slide d-flex flex-column align-items-center text-center mx-auto"
+                >
+                  <img
+                    src="assets/images/testimonial2.jpg"
+                    class="img_carr mb-3"
+                    alt="Retrato de Michael Chen"
+                  />
+                  <p class="section-text">
                     "Trabajar con John fue una experiencia fantástica. Su
                     profesionalismo y atención al detalle superaron nuestras
                     expectativas. Altamente recomendado."
                   </p>
-                  <h5>Nombre: Michael Chen</h5>
-                  <h6>Cargo: CEO en StartupXYZ</h6>
+                  <h5 class="fw-semibold mb-1">Michael Chen</h5>
+                  <h6 class="testimonial-role mb-0">CEO en StartupXYZ</h6>
                 </div>
               </div>
 
               <div class="carousel-item">
-                <img
-                  src="assets/images/testimonial3.jpg"
-                  class="img_carr d-block"
-                  alt="Retrato de Emma Williams"
-                />
-                <div class="carousel-caption text-black">
-                  <p class="">
+                <div
+                  class="testimonial-slide d-flex flex-column align-items-center text-center mx-auto"
+                >
+                  <img
+                    src="assets/images/testimonial3.jpg"
+                    class="img_carr mb-3"
+                    alt="Retrato de Emma Williams"
+                  />
+                  <p class="section-text">
                     "John no solo tiene habilidades técnicas sólidas, sino también
                     una gran capacidad para comunicarse y trabajar en equipo. Un
                     activo valioso para cualquier proyecto."
                   </p>
-                  <h5>Nombre: Emma Williams</h5>
-                  <h6>Cargo: Lead Designer en Digital Agency</h6>
+                  <h5 class="fw-semibold mb-1">Emma Williams</h5>
+                  <h6 class="testimonial-role mb-0">
+                    Lead Designer en Digital Agency
+                  </h6>
                 </div>
               </div>
             </div>
             <button
               class="carousel-control-prev btn_carr"
               type="button"
-              data-bs-target="#carouselExampleCaptions"
+              data-bs-target="#carouselTestimonios"
               data-bs-slide="prev"
             >
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -886,7 +893,7 @@
             <button
               class="carousel-control-next btn_carr"
               type="button"
-              data-bs-target="#carouselExampleCaptions"
+              data-bs-target="#carouselTestimonios"
               data-bs-slide="next"
             >
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -899,8 +906,10 @@
       <!-- ======= CONTACTO ======= -->
       <section id="contacto" class="py-5">
         <div class="form_container">
-          <h2 class="tittle_form">Hablemos</h2>
-          <p>¿Tienes un proyecto en mente? ¡Me encantaría escucharlo!</p>
+          <h2 class="section-title">Hablemos</h2>
+          <p class="section-text">
+            ¿Tienes un proyecto en mente? ¡Me encantaría escucharlo!
+          </p>
           <form action="" class="was-validated w-100">
             <div class="mb-3">
               <label for="nombre" class="form-label">Nombre Completo</label>
@@ -960,6 +969,20 @@
             </div>
             <button type="submit" class="btn btn_form">Enviar Mensaje</button>
           </form>
+          <ul class="contact_info w-100">
+            <li>
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              <a href="mailto:john.doe@email.com">john.doe@email.com</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone" aria-hidden="true"></i>
+              <span>+1 (555) 123-4567</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-map-marker-alt" aria-hidden="true"></i>
+              <span>San Francisco, CA</span>
+            </li>
+          </ul>
         </div>
         <div
           class="d-flex flex-column justify-content-center align-items-center redes"
@@ -1007,6 +1030,7 @@
         <div>
           <img class="logo" src="assets/images/logo.png" alt="Logo de John Doe" />
           <p>© 2026 John Doe. Todos los derechos reservados.</p>
+          <p class="footer_credit">Hecho con ❤️ y Bootstrap</p>
         </div>
         <div
           class="d-flex flex-column justify-content-center align-items-center"
