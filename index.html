@@ -9,6 +9,13 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="css/styles.css" />
     <title>Portfolio Personal</title>
   </head>
@@ -36,13 +43,15 @@
       </nav>
     </header>
 
-    <section id="proyectos">
-      <div>
+    <section class="d-flex justify-content-center align-items-center" id="proyectos">
+      <div class="projects_container">
         <h2>Mis Proyectos</h2>
-        <div class="Container de las cartas">
+
+        <div class="container_cards   ">
+          <!-- Primera card -->
           <div class="card rounded gap-2">
             <img
-              class="rounded rounded-bottom-0 w-100"
+              class="rounded rounded-bottom-0 w-100 h-50"
               src="assets/images/proyecto1.avif"
               alt="E-commerce plataform"
             />
@@ -61,10 +70,348 @@
               <button
                 class="btn_project btn btn-primary"
                 data-bs-toggle="modal"
-                data-bs-target="#modalProyecto1"
+                data-bs-target="#proyecto1"
               >
                 Ver más
               </button>
+            </div>
+          </div>
+          <!-- Segunda card -->
+          <div class="card rounded gap-2">
+            <img
+              class="rounded rounded-bottom-0 w-100 h-50"
+              src="assets/images/proyecto2.jpg"
+              alt="Task Manager App"
+            />
+            <div class="p-3">
+              <h3>Task Manager App</h3>
+              <p>
+                Aplicación de gestión de tareas con drag & drop, categorías
+                personalizadas y sincronización en tiempo real.
+              </p>
+              <div class="badges">
+                <span class="badge rounded-pill">React</span>
+                <span class="badge rounded-pill">Firebase</span>
+                <span class="badge rounded-pill">Material-UI</span>
+              </div>
+              <button
+                class="btn_project btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#proyecto2"
+              >
+                Ver más
+              </button>
+            </div>
+          </div>
+          <!-- Tercera card -->
+          <div class="card rounded gap-2">
+            <img
+              class="rounded rounded-bottom-0 w-100 h-50"
+              src="assets/images/proyecto3.jpg"
+              alt="Weather Dashboard"
+            />
+            <div class="p-3">
+              <h3>Weather Dashboard</h3>
+              <p>
+                Dashboard meteorológico con pronóstico de 7 días, mapas
+                interactivos y alertas personalizadas.
+              </p>
+              <div class="badges">
+                <span class="badge rounded-pill">JavaScript</span>
+                <span class="badge rounded-pill">OpenWeather API</span>
+                <span class="badge rounded-pill">Chart.js</span>
+              </div>
+              <button
+                class="btn_project btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#proyecto3"
+              >
+                Ver más
+              </button>
+            </div>
+          </div>
+          <!-- Cuarta card -->
+          <div class="card rounded gap-2">
+            <img
+              class="rounded rounded-bottom-0 w-100 h-50"
+              src="assets/images/proyecto4.jpg"
+              alt="Portfolio Generator"
+            />
+            <div class="p-3">
+              <h3>Portfolio Generator</h3>
+              <p>
+                Generador de portfolios personalizables con múltiples templates
+                y exportación a HTML/CSS.
+              </p>
+              <div class="badges">
+                <span class="badge rounded-pill">Vue.js</span>
+                <span class="badge rounded-pill">Node.js</span>
+                <span class="badge rounded-pill">Express</span>
+              </div>
+              <button
+                class="btn_project btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#proyecto4"
+              >
+                Ver más
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modales -->
+        <!-- Primer Modal -->
+        <div
+          class="modal fade"
+          id="proyecto1"
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                  E-Commerce Plataform
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <img
+                class="image_modal rounded rounded-bottom-0 w-100"
+                src="assets/images/proyecto1.avif"
+                alt="E-commerce plataform"
+              />
+              <div class="modal-body">
+                <p>
+                  Desarrollé una plataforma de e-commerce completa desde cero
+                  utilizando el stack MERN. La aplicación incluye un sistema de
+                  autenticación robusto, carrito de compras persistente,
+                  integración con Stripe para pagos seguros, y un panel de
+                  administración completo para gestionar productos, órdenes y
+                  usuarios.
+                </p>
+                <h6>Características principales:</h6>
+                <ul class="items_modal">
+                  <li>Autenticación de usuarios con JWT</li>
+                  <li>Carrito de compras con persistencia en base de datos</li>
+                  <li>Pasarela de pagos Stripe integrada</li>
+                  <li>Panel de administración completo</li>
+                  <li>Sistema de búsqueda y filtros avanzados</li>
+                  <li>Diseño responsive y accesible</li>
+                </ul>
+                <div class="badges">
+                  <span class="badge rounded-pill">React</span>
+                  <span class="badge rounded-pill">Node.js</span>
+                  <span class="badge rounded-pill">MongoDB</span>
+                  <span class="badge rounded-pill">Stripe</span>
+                  <span class="badge rounded-pill">Express</span>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary btn_demo">
+                  Ver demo
+                </button>
+                <button type="button" class="btn btn-secondary btn_github">
+                  Github
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Segundo Modal -->
+        <div
+          class="modal fade"
+          id="proyecto2"
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                  Task Manager App
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <img
+                class="image_modal rounded rounded-bottom-0 w-100 h-50"
+                src="assets/images/proyecto2.jpg"
+                alt="E-commerce plataform"
+              />
+              <div class="modal-body">
+                <p>
+                  Aplicación web moderna para gestión de tareas y proyectos
+                  inspirada en herramientas como Trello. Implementé
+                  funcionalidad de arrastrar y soltar usando React DND,
+                  sincronización en tiempo real con Firebase, y un diseño
+                  intuitivo con Material-UI.
+                </p>
+                <h6>Características principales:</h6>
+                <ul class="items_modal">
+                  <li>Drag & drop entre columnas de estado</li>
+                  <li>Sincronización en tiempo real</li>
+                  <li>Categorías y etiquetas personalizables</li>
+                  <li>Sistema de prioridades y fechas límite</li>
+                  <li>Modo colaborativo (múltiples usuarios)</li>
+                  <li>Dark mode integrado</li>
+                </ul>
+                <div class="badges">
+                  <span class="badge rounded-pill">React</span>
+                  <span class="badge rounded-pill">Firebase</span>
+                  <span class="badge rounded-pill">Real-time</span>
+                  <span class="badge rounded-pill">Material-UI</span>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary btn_demo">
+                  Ver demo
+                </button>
+                <button type="button" class="btn btn-secondary btn_github">
+                  Github
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Tercer Modal -->
+        <div
+          class="modal fade"
+          id="proyecto3"
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                  Weather Dashboard
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <img
+                class="image_modal rounded rounded-bottom-0 w-100 h-50"
+                src="assets/images/proyecto3.jpg"
+                alt="Weather Dashboard"
+              />
+              <div class="modal-body">
+                <p>
+                  Dashboard meteorológico interactivo que consume datos de la
+                  API de OpenWeather. Incluye visualización de datos con
+                  gráficos, mapas interactivos, y sistema de alertas para
+                  condiciones climáticas específicas. El proyecto demuestra
+                  habilidades en consumo de APIs, visualización de datos y
+                  diseño responsive.
+                </p>
+                <h6>Características principales:</h6>
+                <ul class="items_modal">
+                  <li>Pronóstico extendido de 7 días</li>
+                  <li>Datos en tiempo real de múltiples ciudades</li>
+                  <li>Gráficos interactivos con Chart.js</li>
+                  <li>Mapas de temperatura y precipitación</li>
+                  <li>Sistema de alertas personalizables</li>
+                  <li>Búsqueda por ubicación</li>
+                </ul>
+                <div class="badges">
+                  <span class="badge rounded-pill">JavaScript</span>
+                  <span class="badge rounded-pill">API</span>
+                  <span class="badge rounded-pill">Chart.js</span>
+                  <span class="badge rounded-pill"> Vanilla JS</span>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary btn_demo">
+                  Ver demo
+                </button>
+                <button type="button" class="btn btn-secondary btn_github">
+                  Github
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Cuarto Modal -->
+        <div
+          class="modal fade"
+          id="proyecto4"
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                  Portfolio Generator
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <img
+                class="image_modal rounded rounded-bottom-0 w-100 h-50"
+                src="assets/images/proyecto4.jpg"
+                alt="Weather Dashboard"
+              />
+              <div class="modal-body">
+                <p>
+                  Herramienta web que permite a desarrolladores y diseñadores
+                  crear portfolios profesionales sin escribir código. Los
+                  usuarios pueden elegir entre varios templates, personalizar
+                  colores y contenido, previsualizar en tiempo real, y exportar
+                  el código HTML/CSS completo.
+                </p>
+                <h6>Características principales:</h6>
+                <ul class="items_modal">
+                  <li>5 templates profesionales</li>
+                  <li>Editor visual intuitivo</li>
+                  <li>Previsualización en tiempo real</li>
+                  <li>Personalización de colores y fuentes</li>
+                  <li>Exportación de código limpio</li>
+                  <li>Responsive por defecto</li>
+                </ul>
+                <div class="badges">
+                  <span class="badge rounded-pill">Vue.js</span>
+                  <span class="badge rounded-pill">Node.js </span>
+                  <span class="badge rounded-pill">CExpress</span>
+                  <span class="badge rounded-pill">SPA</span>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary btn_demo">
+                  Ver demo
+                </button>
+                <button type="button" class="btn btn-secondary btn_github">
+                  Github
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -175,6 +522,98 @@
         </div>
       </div>
     </section>
+
+    <section>
+      <div class="form_container">
+        <h2 class="tittle_form">Hablemos</h2>
+        <p>¿Tienes un proyecto en mente?¡Me encantaria escucharlo!</p>
+        <form action="" class="was-validated w-100">
+          <div class="mb-3">
+            <label for="Nombre" class="form-label">Nombre Completo</label>
+            <input
+              type="text"
+              class="form-control"
+              id="Nombre"
+              placeholder="Tu nombre"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="Email" class="form-label">Correo electrónico</label>
+            <input
+              type="email"
+              class="form-control"
+              id="Email"
+              placeholder="tu@email.com"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="Asunto" class="form-label">Asunto</label>
+            <input
+              type="text"
+              class="form-control w-100"
+              id="Asunto"
+              placeholder="Asunto del mensaje"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="Mensaje" class="form-label">Mensaje</label>
+            <textarea
+              class="form-control textarea-no-resize"
+              id="Mensaje"
+              rows="5"
+              placeholder="Escribe tu mensaje"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn_form">Enviar Mensaje</button>
+        </form>
+      </div>
+      <div
+        class="d-flex flex-column justify-content-center align-items-center redes"
+      >
+        <h4>Sigueme en:</h4>
+        <div
+          class="d-flex justify-content-center align-items-center gap-2 form_brands"
+        >
+          <i class="fa-solid fa-envelope"></i>
+          <i class="fa-brands fa-square-github"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div
+        class="d-flex justify-content-around align-items-center flex-wrap h-auto"
+      >
+        <div>
+          <img class="logo" src="assets/images/logo.png" alt="Logo" />
+          <p>© 2026 John Doe. Todos los derechos reservados.</p>
+        </div>
+        <div
+          class="d-flex flex-column justify-content-center align-items-center"
+        >
+          <h4>Links rapidos</h4>
+          <ul class="links_footer">
+            <li><a class="text-decoration-none" href="">Sobre Mi</a></li>
+            <li><a class="text-decoration-none" href="">Proyectos</a></li>
+            <li><a class="text-decoration-none" href="">Contactos</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Redes Sociales</h2>
+          <div class="d-flex justify-content-center align-items-center gap-2">
+            <i class="fa-brands fa-square-github"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"

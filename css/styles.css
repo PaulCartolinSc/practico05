@@ -89,15 +89,34 @@ body{
   
 }
 
+
+/* proyectos */
+
+
 #proyectos {
+  width: 100%;
   margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.projects_container {
+  width: 80%;
+  
+}
 
+.container_cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
 .card {
   width: 450px;
-  box-shadow: var(--shadow-hover)
-  
+  box-shadow: var(--shadow-hover);
+  height: 500px;
 }
 
 
@@ -111,13 +130,53 @@ body{
 
 .btn_project {
   width: 30%;
-  margin:16px 0 0 0;
+  margin-top:16px;
   color: var(--primary-color);
   background-color: var(--bg-light);
   font-weight: bold;
   border: 2px solid var(--primary-color);
 }
 
+
+/* Modal de los proyectos */
+
+
+
+.modal-header  {
+  background: var(--gradient-primary);
+  color: white;
+}
+
+.image_modal {
+  padding: 10px;
+}
+
+.items_modal li {
+  list-style:disc;
+}
+
+
+.btn_demo{ 
+  color: var(--primary-color);
+  background-color: var(--bg-light);
+  font-weight: bold;
+  border: 2px solid var(--primary-color);
+}
+
+.btn_demo:hover {
+   color: var(--primary-color);
+  background-color: var(--bg-light);
+  font-weight: bold;
+  border: 2px solid var(--primary-color);
+}
+
+.btn_github {
+  background: var(--gradient-primary);
+  color: var(--light-color);
+}
+
+
+/* TESTIMONIOS */
 
 #testimonios {
   margin-top: 200px;
@@ -133,4 +192,110 @@ body{
 
 .btn_carr {
   margin-top: 100px;
+}
+
+
+/* footer */
+
+footer {
+  background-color: var(--bg-footer);
+  color: var(--text-light);
+  padding: 15px;
+  flex-wrap: wrap;
+}
+
+.links_footer li a {
+  color: var(--text-light);
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  margin-right: 35px;
+}
+
+.fa-brands {
+  margin-top: 10px;
+  font-size: 20px;
+  background-color: #363637;
+  color: white;
+  width: auto;
+  border-radius: 100%;
+  padding: 10px;
+}
+
+
+.form_container {
+  width: 600px;
+  margin:50px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+form {
+  box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.1), 0 2px 4px -3px rgba(0, 0, 0, 0.06);
+  padding: 5px;
+}
+
+.tittle_form {
+  margin-right:auto;
+}
+
+.form-label {
+  color: black;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+
+.textarea-no-resize {
+  resize: none;
+}
+
+.form-control:valid {
+  border-color: #28a745;
+}
+
+
+.form-control:invalid {
+  border-color: #dc3545;
+}
+
+
+.was-validated .form-control:invalid {
+  border-color: #dc3545;
+}
+
+.btn_form {
+  width: 100%;
+  background: var(--gradient-primary);
+  color: var(--light-color);
+  font-size: 18px;
+
+}
+
+.btn_form:hover {
+  color: var(--light-color);
+}
+
+.form_brands i {
+  color: gray;
+  background-color: #fafafa;
+  font-size: 30px;
+  transition: all 0.3s ;
+}
+
+.fa-envelope {
+  margin-top: 10px;
+}
+.form_brands i:hover {
+  color: orange;
+  cursor: pointer;
+}
+
+.redes {
+  margin-bottom: 20px;
 }
