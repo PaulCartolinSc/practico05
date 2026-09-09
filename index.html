@@ -53,16 +53,6 @@
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
-        <ul
-          class="links_nav d-flex align-items-center gap-4 border border-solid-red"
-        >
-          <li><a class="text-decoration-none" href="">Inicio</a></li>
-          <li><a class="text-decoration-none" href="">Sobre mi</a></li>
-          <li><a class="text-decoration-none" href="">Habilidades</a></li>
-          <li><a class="text-decoration-none" href="">Proyectos</a></li>
-          <li><a class="text-decoration-none" href="">Testimonios</a></li>
-          <button class="btn_contact border border-none rounded-pill p-3">
-            Contáctame
           </button>
 
           <div class="collapse navbar-collapse" id="navbarNav">
@@ -561,118 +551,6 @@
                   </button>
                 </div>
               </article>
-    <section class="d-flex justify-content-center align-items-center" id="proyectos">
-      <div class="projects_container">
-        <h2>Mis Proyectos</h2>
-
-        <div class="container_cards   ">
-          <!-- Primera card -->
-          <div class="card rounded gap-2">
-            <img
-              class="rounded rounded-bottom-0 w-100 h-50"
-              src="assets/images/proyecto1.avif"
-              alt="E-commerce plataform"
-            />
-            <div class="p-3">
-              <h3>E-Commerce Plataform</h3>
-              <p>
-                Plataforma de comercio electrónico completa con carrito de
-                compras, pasarela de pagos y panel de administración.
-              </p>
-              <div class="badges">
-                <span class="badge rounded-pill">React</span>
-                <span class="badge rounded-pill">Node.js</span>
-                <span class="badge rounded-pill">MongoDB</span>
-                <span class="badge rounded-pill">Stripe</span>
-              </div>
-              <button
-                class="btn_project btn btn-primary"
-                data-bs-toggle="modal"
-                data-bs-target="#proyecto1"
-              >
-                Ver más
-              </button>
-            </div>
-          </div>
-          <!-- Segunda card -->
-          <div class="card rounded gap-2">
-            <img
-              class="rounded rounded-bottom-0 w-100 h-50"
-              src="assets/images/proyecto2.jpg"
-              alt="Task Manager App"
-            />
-            <div class="p-3">
-              <h3>Task Manager App</h3>
-              <p>
-                Aplicación de gestión de tareas con drag & drop, categorías
-                personalizadas y sincronización en tiempo real.
-              </p>
-              <div class="badges">
-                <span class="badge rounded-pill">React</span>
-                <span class="badge rounded-pill">Firebase</span>
-                <span class="badge rounded-pill">Material-UI</span>
-              </div>
-              <button
-                class="btn_project btn btn-primary"
-                data-bs-toggle="modal"
-                data-bs-target="#proyecto2"
-              >
-                Ver más
-              </button>
-            </div>
-          </div>
-          <!-- Tercera card -->
-          <div class="card rounded gap-2">
-            <img
-              class="rounded rounded-bottom-0 w-100 h-50"
-              src="assets/images/proyecto3.jpg"
-              alt="Weather Dashboard"
-            />
-            <div class="p-3">
-              <h3>Weather Dashboard</h3>
-              <p>
-                Dashboard meteorológico con pronóstico de 7 días, mapas
-                interactivos y alertas personalizadas.
-              </p>
-              <div class="badges">
-                <span class="badge rounded-pill">JavaScript</span>
-                <span class="badge rounded-pill">OpenWeather API</span>
-                <span class="badge rounded-pill">Chart.js</span>
-              </div>
-              <button
-                class="btn_project btn btn-primary"
-                data-bs-toggle="modal"
-                data-bs-target="#proyecto3"
-              >
-                Ver más
-              </button>
-            </div>
-          </div>
-          <!-- Cuarta card -->
-          <div class="card rounded gap-2">
-            <img
-              class="rounded rounded-bottom-0 w-100 h-50"
-              src="assets/images/proyecto4.jpg"
-              alt="Portfolio Generator"
-            />
-            <div class="p-3">
-              <h3>Portfolio Generator</h3>
-              <p>
-                Generador de portfolios personalizables con múltiples templates
-                y exportación a HTML/CSS.
-              </p>
-              <div class="badges">
-                <span class="badge rounded-pill">Vue.js</span>
-                <span class="badge rounded-pill">Node.js</span>
-                <span class="badge rounded-pill">Express</span>
-              </div>
-              <button
-                class="btn_project btn btn-primary"
-                data-bs-toggle="modal"
-                data-bs-target="#proyecto4"
-              >
-                Ver más
-              </button>
             </div>
           </div>
         </div>
@@ -704,36 +582,6 @@
                   class="img-fluid modal-project-img"
                   alt="Captura de la plataforma E-Commerce Platform"
                 />
-        <!-- Modales -->
-        <!-- Primer Modal -->
-        <div
-          class="modal fade"
-          id="proyecto1"
-          data-bs-backdrop="static"
-          data-bs-keyboard="false"
-          tabindex="-1"
-          aria-labelledby="staticBackdropLabel"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="staticBackdropLabel">
-                  E-Commerce Plataform
-                </h1>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <img
-                class="image_modal rounded rounded-bottom-0 w-100"
-                src="assets/images/proyecto1.avif"
-                alt="E-commerce plataform"
-              />
-              <div class="modal-body">
                 <p>
                   Desarrollé una plataforma de e-commerce completa desde cero
                   utilizando el stack MERN. La aplicación incluye un sistema de
@@ -744,8 +592,6 @@
                 </p>
                 <h6 class="fw-semibold">Características principales:</h6>
                 <ul class="modal-features">
-                <h6>Características principales:</h6>
-                <ul class="items_modal">
                   <li>Autenticación de usuarios con JWT</li>
                   <li>Carrito de compras con persistencia en base de datos</li>
                   <li>Pasarela de pagos Stripe integrada</li>
@@ -764,21 +610,6 @@
               <div class="modal-footer">
                 <a href="#" class="btn btn-outline-primary">Ver Demo</a>
                 <a href="#" class="btn btn-hero-primary">GitHub</a>
-                <div class="badges">
-                  <span class="badge rounded-pill">React</span>
-                  <span class="badge rounded-pill">Node.js</span>
-                  <span class="badge rounded-pill">MongoDB</span>
-                  <span class="badge rounded-pill">Stripe</span>
-                  <span class="badge rounded-pill">Express</span>
-                </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary btn_demo">
-                  Ver demo
-                </button>
-                <button type="button" class="btn btn-secondary btn_github">
-                  Github
-                </button>
               </div>
             </div>
           </div>
@@ -810,35 +641,6 @@
                   class="img-fluid modal-project-img"
                   alt="Captura de la aplicación Task Manager App"
                 />
-        <!-- Segundo Modal -->
-        <div
-          class="modal fade"
-          id="proyecto2"
-          data-bs-backdrop="static"
-          data-bs-keyboard="false"
-          tabindex="-1"
-          aria-labelledby="staticBackdropLabel"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="staticBackdropLabel">
-                  Task Manager App
-                </h1>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <img
-                class="image_modal rounded rounded-bottom-0 w-100 h-50"
-                src="assets/images/proyecto2.jpg"
-                alt="E-commerce plataform"
-              />
-              <div class="modal-body">
                 <p>
                   Aplicación web moderna para gestión de tareas y proyectos
                   inspirada en herramientas como Trello. Implementé
@@ -849,9 +651,6 @@
                 <h6 class="fw-semibold">Características principales:</h6>
                 <ul class="modal-features">
                   <li>Drag &amp; drop entre columnas de estado</li>
-                <h6>Características principales:</h6>
-                <ul class="items_modal">
-                  <li>Drag & drop entre columnas de estado</li>
                   <li>Sincronización en tiempo real</li>
                   <li>Categorías y etiquetas personalizables</li>
                   <li>Sistema de prioridades y fechas límite</li>
@@ -868,20 +667,6 @@
               <div class="modal-footer">
                 <a href="#" class="btn btn-outline-primary">Ver Demo</a>
                 <a href="#" class="btn btn-hero-primary">GitHub</a>
-                <div class="badges">
-                  <span class="badge rounded-pill">React</span>
-                  <span class="badge rounded-pill">Firebase</span>
-                  <span class="badge rounded-pill">Real-time</span>
-                  <span class="badge rounded-pill">Material-UI</span>
-                </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary btn_demo">
-                  Ver demo
-                </button>
-                <button type="button" class="btn btn-secondary btn_github">
-                  Github
-                </button>
               </div>
             </div>
           </div>
@@ -913,35 +698,6 @@
                   class="img-fluid modal-project-img"
                   alt="Captura del panel Weather Dashboard"
                 />
-        <!-- Tercer Modal -->
-        <div
-          class="modal fade"
-          id="proyecto3"
-          data-bs-backdrop="static"
-          data-bs-keyboard="false"
-          tabindex="-1"
-          aria-labelledby="staticBackdropLabel"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="staticBackdropLabel">
-                  Weather Dashboard
-                </h1>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <img
-                class="image_modal rounded rounded-bottom-0 w-100 h-50"
-                src="assets/images/proyecto3.jpg"
-                alt="Weather Dashboard"
-              />
-              <div class="modal-body">
                 <p>
                   Dashboard meteorológico interactivo que consume datos de la
                   API de OpenWeather. Incluye visualización de datos con
@@ -952,8 +708,6 @@
                 </p>
                 <h6 class="fw-semibold">Características principales:</h6>
                 <ul class="modal-features">
-                <h6>Características principales:</h6>
-                <ul class="items_modal">
                   <li>Pronóstico extendido de 7 días</li>
                   <li>Datos en tiempo real de múltiples ciudades</li>
                   <li>Gráficos interactivos con Chart.js</li>
@@ -971,20 +725,6 @@
               <div class="modal-footer">
                 <a href="#" class="btn btn-outline-primary">Ver Demo</a>
                 <a href="#" class="btn btn-hero-primary">GitHub</a>
-                <div class="badges">
-                  <span class="badge rounded-pill">JavaScript</span>
-                  <span class="badge rounded-pill">API</span>
-                  <span class="badge rounded-pill">Chart.js</span>
-                  <span class="badge rounded-pill"> Vanilla JS</span>
-                </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary btn_demo">
-                  Ver demo
-                </button>
-                <button type="button" class="btn btn-secondary btn_github">
-                  Github
-                </button>
               </div>
             </div>
           </div>
@@ -1016,35 +756,6 @@
                   class="img-fluid modal-project-img"
                   alt="Captura de la herramienta Portfolio Generator"
                 />
-        <!-- Cuarto Modal -->
-        <div
-          class="modal fade"
-          id="proyecto4"
-          data-bs-backdrop="static"
-          data-bs-keyboard="false"
-          tabindex="-1"
-          aria-labelledby="staticBackdropLabel"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="staticBackdropLabel">
-                  Portfolio Generator
-                </h1>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <img
-                class="image_modal rounded rounded-bottom-0 w-100 h-50"
-                src="assets/images/proyecto4.jpg"
-                alt="Weather Dashboard"
-              />
-              <div class="modal-body">
                 <p>
                   Herramienta web que permite a desarrolladores y diseñadores
                   crear portfolios profesionales sin escribir código. Los
@@ -1054,8 +765,6 @@
                 </p>
                 <h6 class="fw-semibold">Características principales:</h6>
                 <ul class="modal-features">
-                <h6>Características principales:</h6>
-                <ul class="items_modal">
                   <li>5 templates profesionales</li>
                   <li>Editor visual intuitivo</li>
                   <li>Previsualización en tiempo real</li>
@@ -1073,223 +782,275 @@
               <div class="modal-footer">
                 <a href="#" class="btn btn-outline-primary">Ver Demo</a>
                 <a href="#" class="btn btn-hero-primary">GitHub</a>
-                <div class="badges">
-                  <span class="badge rounded-pill">Vue.js</span>
-                  <span class="badge rounded-pill">Node.js </span>
-                  <span class="badge rounded-pill">CExpress</span>
-                  <span class="badge rounded-pill">SPA</span>
-                </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary btn_demo">
-                  Ver demo
-                </button>
-                <button type="button" class="btn btn-secondary btn_github">
-                  Github
-                </button>
               </div>
             </div>
           </div>
         </div>
       </section>
-
-      <!-- Sections 6-8 (Testimonios, Contacto, Footer) handled by teammate -->
-    </main>
-      </div>
-    </section>
-
-    <section
-      id="testimonios"
-      class="w-100 flex justify-content-center align-items-center"
-    >
-      <div class="m-auto carousel-dark">
-        <h2>Que Dicen de Mí</h2>
-        <div id="carouselExampleCaptions" class="carousel slide">
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="0"
-              class="active d-none"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              class="d-none"
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              class="d-none"
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img
-                src="assets/images/testimonial1.jpg"
-                class="img_carr d-block"
-                alt="..."
-              />
-              <div class="carousel-caption text-black">
-                <p class="">
-                  "John es un desarrollador excepcional. Su capacidad para
-                  resolver problemas complejos y entregar código limpio es
-                  impresionante. Fue clave en el éxito de nuestro proyecto."
-                </p>
-                <h5>Nombre: Sarah Johnson</h5>
-                <h6>Cargo: Project Manager en Tech Solutions</h6>
-              </div>
-            </div>
-
-            <div class="carousel-item">
-              <img
-                src="assets/images/testimonial2.jpg"
-                class="img_carr d-block"
-                alt="..."
-              />
-              <div class="carousel-caption text-black">
-                <p class="">
-                  "Trabajar con John fue una experiencia fantástica. Su
-                  profesionalismo y atención al detalle superaron nuestras
-                  expectativas. Altamente recomendado."
-                </p>
-                <h5>Nombre: Michael Chen</h5>
-                <h6>Cargo: CEO en StartupXYZ</h6>
-              </div>
-            </div>
-
-            <div class="carousel-item">
-              <img
-                src="assets/images//testimonial3.jpg"
-                class="img_carr d-block"
-                alt="..."
-              />
-              <div class="carousel-caption text-black">
-                <p class="">
-                  "John no solo tiene habilidades técnicas sólidas, sino también
-                  una gran capacidad para comunicarse y trabajar en equipo. Un
-                  activo valioso para cualquier proyecto."
-                </p>
-                <h5>Nombre: Emma Williams</h5>
-                <h6>Cargo: Lead Designer en Digital Agency</h6>
-              </div>
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev btn_carr"
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next btn_carr"
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="form_container">
-        <h2 class="tittle_form">Hablemos</h2>
-        <p>¿Tienes un proyecto en mente?¡Me encantaria escucharlo!</p>
-        <form action="" class="was-validated w-100">
-          <div class="mb-3">
-            <label for="Nombre" class="form-label">Nombre Completo</label>
-            <input
-              type="text"
-              class="form-control"
-              id="Nombre"
-              placeholder="Tu nombre"
-              required
-            />
-          </div>
-          <div class="mb-3">
-            <label for="Email" class="form-label">Correo electrónico</label>
-            <input
-              type="email"
-              class="form-control"
-              id="Email"
-              placeholder="tu@email.com"
-              required
-            />
-          </div>
-          <div class="mb-3">
-            <label for="Asunto" class="form-label">Asunto</label>
-            <input
-              type="text"
-              class="form-control w-100"
-              id="Asunto"
-              placeholder="Asunto del mensaje"
-              required
-            />
-          </div>
-          <div class="mb-3">
-            <label for="Mensaje" class="form-label">Mensaje</label>
-            <textarea
-              class="form-control textarea-no-resize"
-              id="Mensaje"
-              rows="5"
-              placeholder="Escribe tu mensaje"
-              required
-            ></textarea>
-          </div>
-          <button type="submit" class="btn btn_form">Enviar Mensaje</button>
-        </form>
-      </div>
-      <div
-        class="d-flex flex-column justify-content-center align-items-center redes"
+      <!-- ======= TESTIMONIOS ======= -->
+      <section
+        id="testimonios"
+        class="w-100 flex justify-content-center align-items-center"
       >
-        <h4>Sigueme en:</h4>
-        <div
-          class="d-flex justify-content-center align-items-center gap-2 form_brands"
-        >
-          <i class="fa-solid fa-envelope"></i>
-          <i class="fa-brands fa-square-github"></i>
-          <i class="fa-brands fa-linkedin"></i>
-          <i class="fa-brands fa-twitter"></i>
+        <div class="m-auto carousel-dark">
+          <h2>Lo Que Dicen de Mí</h2>
+          <div
+            id="carouselExampleCaptions"
+            class="carousel slide"
+            data-bs-ride="carousel"
+            data-bs-interval="5000"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="assets/images/testimonial1.jpg"
+                  class="img_carr d-block"
+                  alt="Retrato de Sarah Johnson"
+                />
+                <div class="carousel-caption text-black">
+                  <p class="">
+                    "John es un desarrollador excepcional. Su capacidad para
+                    resolver problemas complejos y entregar código limpio es
+                    impresionante. Fue clave en el éxito de nuestro proyecto."
+                  </p>
+                  <h5>Nombre: Sarah Johnson</h5>
+                  <h6>Cargo: Project Manager en Tech Solutions</h6>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img
+                  src="assets/images/testimonial2.jpg"
+                  class="img_carr d-block"
+                  alt="Retrato de Michael Chen"
+                />
+                <div class="carousel-caption text-black">
+                  <p class="">
+                    "Trabajar con John fue una experiencia fantástica. Su
+                    profesionalismo y atención al detalle superaron nuestras
+                    expectativas. Altamente recomendado."
+                  </p>
+                  <h5>Nombre: Michael Chen</h5>
+                  <h6>Cargo: CEO en StartupXYZ</h6>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img
+                  src="assets/images/testimonial3.jpg"
+                  class="img_carr d-block"
+                  alt="Retrato de Emma Williams"
+                />
+                <div class="carousel-caption text-black">
+                  <p class="">
+                    "John no solo tiene habilidades técnicas sólidas, sino también
+                    una gran capacidad para comunicarse y trabajar en equipo. Un
+                    activo valioso para cualquier proyecto."
+                  </p>
+                  <h5>Nombre: Emma Williams</h5>
+                  <h6>Cargo: Lead Designer en Digital Agency</h6>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev btn_carr"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next btn_carr"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <!-- ======= CONTACTO ======= -->
+      <section id="contacto" class="py-5">
+        <div class="form_container">
+          <h2 class="tittle_form">Hablemos</h2>
+          <p>¿Tienes un proyecto en mente? ¡Me encantaría escucharlo!</p>
+          <form action="" class="was-validated w-100">
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre Completo</label>
+              <input
+                type="text"
+                class="form-control"
+                id="nombre"
+                name="nombre"
+                placeholder="Tu nombre"
+                required
+              />
+              <div class="invalid-feedback">
+                Por favor ingresa tu nombre completo.
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo Electrónico</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                placeholder="tu@email.com"
+                required
+              />
+              <div class="invalid-feedback">
+                Por favor ingresa un correo electrónico válido.
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="asunto" class="form-label">Asunto</label>
+              <input
+                type="text"
+                class="form-control w-100"
+                id="asunto"
+                name="asunto"
+                placeholder="Asunto del mensaje"
+                required
+              />
+              <div class="invalid-feedback">
+                Por favor ingresa el asunto del mensaje.
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="mensaje" class="form-label">Mensaje</label>
+              <textarea
+                class="form-control textarea-no-resize"
+                id="mensaje"
+                name="mensaje"
+                rows="5"
+                placeholder="Escribe tu mensaje aquí..."
+                required
+              ></textarea>
+              <div class="invalid-feedback">
+                Por favor escribe tu mensaje.
+              </div>
+            </div>
+            <button type="submit" class="btn btn_form">Enviar Mensaje</button>
+          </form>
+        </div>
+        <div
+          class="d-flex flex-column justify-content-center align-items-center redes"
+        >
+          <h4>Sigueme en:</h4>
+          <div
+            class="d-flex justify-content-center align-items-center gap-2 form_brands"
+          >
+            <a href="mailto:john.doe@email.com" aria-label="Enviar un correo a John Doe">
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            </a>
+            <a
+              href="https://github.com/johndoe"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub de John Doe"
+            >
+              <i class="fa-brands fa-square-github" aria-hidden="true"></i>
+            </a>
+            <a
+              href="https://linkedin.com/in/johndoe"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn de John Doe"
+            >
+              <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a
+              href="https://twitter.com/johndoe"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitter de John Doe"
+            >
+              <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <footer>
       <div
         class="d-flex justify-content-around align-items-center flex-wrap h-auto"
       >
         <div>
-          <img class="logo" src="assets/images/logo.png" alt="Logo" />
+          <img class="logo" src="assets/images/logo.png" alt="Logo de John Doe" />
           <p>© 2026 John Doe. Todos los derechos reservados.</p>
         </div>
         <div
           class="d-flex flex-column justify-content-center align-items-center"
         >
-          <h4>Links rapidos</h4>
+          <h4>Links Rápidos</h4>
           <ul class="links_footer">
-            <li><a class="text-decoration-none" href="">Sobre Mi</a></li>
-            <li><a class="text-decoration-none" href="">Proyectos</a></li>
-            <li><a class="text-decoration-none" href="">Contactos</a></li>
+            <li>
+              <a class="text-decoration-none" href="#sobre-mi">Sobre Mí</a>
+            </li>
+            <li>
+              <a class="text-decoration-none" href="#proyectos">Proyectos</a>
+            </li>
+            <li>
+              <a class="text-decoration-none" href="#contacto">Contacto</a>
+            </li>
           </ul>
         </div>
         <div>
-          <h2>Redes Sociales</h2>
+          <h4>Redes Sociales</h4>
           <div class="d-flex justify-content-center align-items-center gap-2">
-            <i class="fa-brands fa-square-github"></i>
-            <i class="fa-brands fa-linkedin"></i>
-            <i class="fa-brands fa-twitter"></i>
+            <a
+              href="https://github.com/johndoe"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub de John Doe"
+            >
+              <i class="fa-brands fa-square-github" aria-hidden="true"></i>
+            </a>
+            <a
+              href="https://linkedin.com/in/johndoe"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn de John Doe"
+            >
+              <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a
+              href="https://twitter.com/johndoe"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitter de John Doe"
+            >
+              <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+            </a>
           </div>
         </div>
       </div>
